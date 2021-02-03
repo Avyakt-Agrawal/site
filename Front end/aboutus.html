@@ -1,0 +1,234 @@
+<html>
+    <head>
+      <style>
+        body{
+          background-color: ;
+        }
+        #imag{
+          float: left;
+          width: 500px;
+          padding-left: 50px;
+          padding-top: 50px;
+        }
+        #one{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          background-color: rgb(50, 50, 50) ;
+          height: 400px;
+        }
+        #text{
+          color: white;
+          padding-top: 25px;
+          padding-left: 100px;
+        }
+        #mis{
+          color: white;
+        }
+        #ot{
+          padding-top: 25px;
+          padding-left: 950px;
+        }
+        #il{
+          width: 1000px;
+          float: left;
+        }
+        #l{
+          padding-left: 1000px;
+        }
+        #three{
+          padding: 50px;
+          margin: 20px;
+        }
+
+      </style>
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Login
+              </button>
+              &nbsp;&nbsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                Sign Up
+              </button>
+            </div>
+          </nav>
+          <!-- Button trigger modal -->
+      
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="/login" method = "POST">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" value="login_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" value="login_password" class="form-control" id="exampleInputPassword1">
+                    </div>
+      
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+      
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="/apply" method ="POST">
+                    <div class="form-group">
+                      <label for="exampleName">Name</label>
+                      <input type="text" value="user_name" class="form-control" id="exampleName" aria-describedby="emailHelp">
+      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleMobile">Mobile Number</label>
+                      <input type="number" value="user_number" class="form-control" id="exampleMobile" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your mobile number with anyone
+                        else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" value="user_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" value="user_password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword2">Confirm Password</label>
+                      <input type="password" value = "user_confirm_password" class="form-control" id="exampleInputPassword2">
+                    </div>
+      
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+          <div id = 'one'>
+            <div id = "2">
+          <img id='imag' src="shutterstock_135114548.jpg"  >
+        </div>
+        <div id="3">
+          <h3 id="text">Our mission and vision</h3>
+         
+          <p id="mis"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. 
+
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eros metus, consectetur quis malesuada eget, convallis id massa. Etiam urna elit, tincidunt in bibendum ut, imperdiet eget ligula. Proin aliquet, lacus ac scelerisque molestie, ante eros placerat ligula, sit amet mollis turpis lectus vel justo. Duis arcu odio, luctus sit amet dui iaculis, sodales venenatis odio. Aliquam congue ultrices sem, ut malesuada enim feugiat ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed orci neque, sodales a dictum id, tempus non est. In pellentesque mauris nec eros luctus, ut aliquam massa ornare. Vivamus tincidunt a dui et rutrum. Vivamus fringilla interdum ex, ac dictum dolor aliquam elementum. Vestibulum nunc mauris, sollicitudin quis ultricies non, cursus eu ligula. In in pharetra ex. Sed tortor nulla, luctus non justo at, suscipit convallis neque. Praesent ligula tortor, dictum quis ullamcorper ac, posuere ut augue. Integer ex dolor, viverra ac erat ut, commodo tempor orci.
+            
+            Aliquam non lacinia odio. Donec metus lacus, mattis venenatis arcu eu, sodales blandit lacus. Phasellus convallis ex sapien, in mattis metus porttitor sed. Pellentesque lectus nibh, maximus at fringilla a, facilisis eu purus.</p>
+          </div>
+          </div>
+        <h3 id="ot">Our Team</h3>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="21.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mark</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="76.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Zak</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="32.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">John</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <h1 id="l">Our Creator</h1>
+        <img src="34.jpg" id="il">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in diam quis lectus mattis sagittis. Cras ac semper ex. Phasellus purus enim, dignissim sit amet nunc a, posuere venenatis quam. Suspendisse potenti. Praesent nibh sem, rutrum non mollis ac, dapibus accumsan dui. Ut nec ex cursus, pretium lorem vel, placerat risus. Aliquam quis tortor quis mauris pharetra luctus. Nulla sed neque vitae mauris gravida consectetur vel at mi. Morbi rhoncus nisl libero, non tincidunt ligula pellentesque id. Nullam eget lorem arcu. Nulla facilisi.
+
+          Curabitur id libero urna. Etiam accumsan nec neque ut vehicula. Curabitur at interdum nulla, vel ultrices nibh. Nunc quis commodo dui, quis aliquam nunc. Morbi sodales diam risus, ac molestie nibh facilisis in. Nullam nec placerat neque. Suspendisse nec malesuada orci. Maecenas quam neque, consequat sit amet efficitur in, vulputate eu diam. Curabitur tempus placerat eros, quis posuere tortor posuere non. Vestibulum feugiat lacus nibh. Quisque mattis turpis sit amet est tempus vulputate. Integer vitae turpis at lacus facilisis tempus. Integer aliquet sapien vitae facilisis faucibus. Donec rhoncus erat non cursus rhoncus. Morbi ut tempor turpis, vel viverra turpis.
+          
+          Sed porta sed est semper rutrum. Integer et augue lacus. Pellentesque et tellus sapien. Mauris gravida convallis libero quis fermentum. In quis dui et purus gravida aliquam nec eget metus. Nulla sit amet sapien faucibus, facilisis est quis, gravida metus. Fusce tincidunt, massa vitae malesuada ornare, nisl eros molestie enim, non cursus tellus felis in massa. Donec sollicitudin pretium felis, sit amet pharetra massa finibus vitae. Sed auctor sollicitudin libero, sit amet rhoncus nulla imperdiet ac. Curabitur placerat nisi eu odio vehicula, quis hendrerit orci accumsan. Sed lobortis commodo nisl, quis faucibus lectus molestie ac. Nam eget turpis in mauris congue viverra id in augue.
+          
+          Curabitur pharetra sollicitudin lorem a sodales. Mauris pretium ac odio ac vulputate. Nam eget ipsum ac massa dapibus vehicula. Vestibulum fringilla, augue nec feugiat rhoncus, sem libero iaculis dolor, vitae congue ligula turpis ac neque. Aliquam et tempus arcu. In sem dolor, vulputate sed maximus sed, blandit sit amet erat. Vestibulum quis maximus odio, eget aliquet magna. Pellentesque felis libero, condimentum vel facilisis non, iaculis eu eros. Donec volutpat tincidunt lectus, id aliquam lectus. Proin aliquet maximus scelerisque. Integer ac lobortis nisl. Suspendisse at tellus nunc. Sed auctor, lorem ac viverra porttitor, neque mauris sodales lorem, quis vehicula tortor dolor eu enim. Vivamus finibus, felis eu iaculis posuere, tellus mi venenatis ex, nec pellentesque dui lectus eu elit.
+          
+          Integer erat eros, volutpat ut bibendum et, pulvinar ac lorem. Pellentesque ut molestie lectus, vel faucibus tellus. Vestibulum aliquet suscipit imperdiet. Ut varius sem in metus imperdiet auctor. Nam vel venenatis mi. Aenean sodales leo non ligula molestie, vitae varius sem consequat. Cras eu purus nisl. Nam ultrices et orci a vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a orci vitae arcu varius ullamcorper ac vitae justo. Nunc consequat nunc non felis hendrerit lobortis. Duis congue tortor vitae enim rhoncus convallis. Curabitur vel turpis diam. Sed facilisis magna nunc, sit amet maximus nulla venenatis id. Nulla vestibulum hendrerit ex. Aliquam facilisis laoreet dolor vel maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in diam quis lectus mattis sagittis. Cras ac semper ex. Phasellus purus enim, dignissim sit amet nunc a, posuere venenatis quam. Suspendisse potenti. Praesent nibh sem, rutrum non mollis ac, dapibus accumsan dui. Ut nec ex cursus, pretium lorem vel, placerat risus. Aliquam quis tortor quis mauris pharetra luctus. Nulla sed neque vitae mauris gravida consectetur vel at mi. Morbi rhoncus nisl libero, non tincidunt ligula pellentesque id. Nullam eget lorem arcu. Nulla facilisi.
+
+          Curabitur id libero urna. Etiam accumsan nec neque ut vehicula. Curabitur at interdum nulla, vel ultrices nibh. Nunc quis commodo dui, quis aliquam nunc. Morbi sodales diam risus, ac molestie nibh facilisis in. Nullam nec placerat neque. Suspendisse nec malesuada orci. Maecenas quam neque, consequat sit amet efficitur in, vulputate eu diam. Curabitur tempus placerat eros, quis posuere tortor posuere non. Vestibulum feugiat lacus nibh. Quisque mattis turpis sit amet est tempus vulputate. Integer vitae turpis at lacus facilisis tempus. Integer aliquet sapien vitae facilisis faucibus. Donec rhoncus erat non cursus rhoncus. Morbi ut tempor turpis, vel viverra turpis.
+          
+          Sed porta sed est semper rutrum. Integer et augue lacus. Pellentesque et tellus sapien. Mauris gravida convallis libero quis fermentum. In quis dui et purus gravida aliquam nec eget metus. Nulla sit amet sapien faucibus, facilisis est quis, gravida metus. Fusce tincidunt, massa vitae malesuada ornare, nisl eros molestie enim, non cursus tellus felis in massa. Donec sollicitudin pretium felis, sit amet pharetra massa finibus vitae. Sed auctor sollicitudin libero, sit amet rhoncus nulla imperdiet ac. Curabitur placerat nisi eu odio vehicula, quis hendrerit orci accumsan. Sed lobortis commodo nisl, quis faucibus lectus molestie ac. Nam eget turpis in mauris congue viverra id in augue.
+          
+          Curabitur pharetra sollicitudin lorem a sodales. Mauris pretium ac odio ac vulputate. Nam eget ipsum ac massa dapibus vehicula. Vestibulum fringilla, augue nec feugiat rhoncus, sem libero iaculis dolor, vitae congue ligula turpis ac neque. Aliquam et tempus arcu. In sem dolor, vulputate sed maximus sed, blandit sit amet erat. Vestibulum quis maximus odio, eget aliquet magna. Pellentesque felis libero, condimentum vel facilisis non, iaculis eu eros. Donec volutpat tincidunt lectus, id aliquam lectus. Proin aliquet maximus scelerisque. Integer ac lobortis nisl. Suspendisse at tellus nunc. Sed auctor, lorem ac viverra porttitor, neque mauris sodales lorem, quis vehicula tortor dolor eu enim. Vivamus finibus, felis eu iaculis posuere, tellus mi venenatis ex, nec pellentesque dui lectus eu elit.
+          
+          Integer erat eros, volutpat ut bibendum et, pulvinar ac lorem. Pellentesque ut molestie lectus, vel faucibus tellus. Vestibulum aliquet suscipit imperdiet. Ut varius sem in metus imperdiet auctor. Nam vel venenatis mi. Aenean sodales leo non ligula molestie, vitae varius sem consequat. Cras eu purus nisl. Nam ultrices et orci a vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a orci vitae arcu varius ullamcorper ac vitae justo. Nunc consequat nunc non felis hendrerit lobortis. Duis congue tortor vitae enim rhoncus convallis. Curabitur vel turpis diam. Sed facilisis magna nunc, sit amet maximus nulla venenatis id. Nulla vestibulum hendrerit ex. Aliquam facilisis laoreet dolor vel maximus. </p>
+
+
+    </body>
+
+
+</html>
